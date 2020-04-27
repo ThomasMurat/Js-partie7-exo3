@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Js-partie7-exo3</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Multiplication</legend>
+                <label for="nb1">Premier nombre:</label>
+                <input style="border: 1px black solid;" type="number" id="nb1" placeholder="nb1" required /><br>
+                <label for="nb2">Deuxième nombre:</label>
+                <input style="border: 1px black solid;" type="number" id="nb2" placeholder="nb2" required /><br>
+                <button onclick="multipliate(nb1, nb2)">Multiplier</button>
+            </fieldset>
+        </form>
+        <script>
+            var multipliate = (nb1, nb2) => {  
+                nb1 = document.getElementById('nb1').value; 
+                nb2 = document.getElementById('nb2').value;
+                alert(nb1 * nb2);
+            }
+        </script>
+    </body>
+</html>
